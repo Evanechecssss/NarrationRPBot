@@ -1,16 +1,13 @@
 import discord
+from conf import config as config
 import re
 
 
-async def get_channel(guild):
-    return discord.utils.get(guild.channels, name="инвентари")
-
-
 async def get_invs(guild):
-    channel = discord.utils.get(guild.channels, name="инвентари")
-    if channel == None:
+    channel = discord.utils.get(guild.channels, name=config.channel_inv)
+    if channel is None:
         return None
-    messages = await channel.history(limit=200).flatten()
+    messages = await channel.history(limit=600).flatten()
     return messages
 
 
@@ -18,26 +15,35 @@ async def edit_inventory(inv, new_inventory):
     await inv.edit(content=new_inventory)
 
 
-async def get_message(guild, id):
+async def get_validate_messages(guild, ids):
+    valids = []
     invs = await get_invs(guild)
     if invs is None:
         return None
-    for i in range(len(invs)):
-        content = invs[i].content
-        c_id = await get_id_from_inv(content)
-        if len(c_id) == 0:
-            continue
-        if id.lower() == c_id[0].lower():
-            return invs[i]
-    return None
-
-
-async def get_inv(guild, id):
-    inv = await get_message(guild, id)
-    if inv is None:
-        return None
+    if ids == config.sign_all:
+        for i in range(len(invs)):
+            content = invs[i].content
+            c_id = await get_id_from_inv(content)
+            if len(c_id) == 0:
+                continue
+            else:
+                valids.append(invs[i])
+        return valids
     else:
-        return inv.content
+        ids = ids.split(",")
+        for i in range(len(invs)):
+            content = invs[i].content
+            c_id = await get_id_from_inv(content)
+            if len(c_id) == 0:
+                continue
+            if c_id[0].lower() in [_id.lower() for _id in ids]:
+                valids.append(invs[i])
+        return valids
+
+
+'''
+' Inventory parsers
+'''
 
 
 async def get_id_from_inv(content):
@@ -64,6 +70,11 @@ async def put_states(inv, content):
 
 async def create_inv(id, items, states):
     return f"**📦 {id.upper()} 📦**\n\n**ВЕЩИ**```{items}```\n**СОСТОЯНИЕ**```{states}```"
+
+
+'''
+' Inventory converters
+'''
 
 
 async def strinv_to_objinv(string):

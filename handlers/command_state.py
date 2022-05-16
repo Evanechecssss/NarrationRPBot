@@ -31,60 +31,76 @@ async def on_command(bot, message):
 
 
 async def clear_states(bot, message, args):
-    inv = await data.get_inv(message.guild, args['id'])
-    if inv is None:
+    inv_message = await data.get_validate_messages(message.guild, args['id'])
+    if inv_message is None or len(inv_message) == 0:
         await message.add_reaction(bot.get_emoji(config.emoji_warn))
         return
-    message2 = await data.get_message(message.guild, args['id'])
-    content = await data.get_states(inv)
-    inv_object = await data.strstate_to_objstate(content)
-    inv_object.clear()
-    inv_string = await data.objstate_to_strstate(inv_object)
-    new_inv = await data.put_states(inv, inv_string)
-    await data.edit_inventory(message2, new_inv[1:-1])
+    for _message in inv_message:
+        if _message is None:
+            await message.add_reaction(bot.get_emoji(config.emoji_warn))
+            continue
+        content = await data.get_states(_message.content)
+        inv_object = await data.strstate_to_objstate(content)
+        inv_object.clear()
+        inv_string = await data.objstate_to_strstate(inv_object)
+        new_inv = await data.put_states(_message.content, inv_string)
+        await data.edit_inventory(_message, new_inv[1:-1])
 
 
 async def add_state(bot, message, args):
-    inv = await data.get_inv(message.guild, args['id'])
-    if inv is None:
+    inv_message = await data.get_validate_messages(message.guild, args['id'])
+    if inv_message is None or len(inv_message) == 0:
         await message.add_reaction(bot.get_emoji(config.emoji_warn))
         return
-    message2 = await data.get_message(message.guild, args['id'])
-    content = await data.get_states(inv)
-    inv_object = await data.strstate_to_objstate(content)
-    if '' in inv_object:
-        del inv_object['']
-    inv_object[args['state']] = args['state']
-    inv_string = await data.objstate_to_strstate(inv_object)
-    new_inv = await data.put_states(inv, inv_string)
-    await data.edit_inventory(message2, new_inv[1:-1])
+    for _message in inv_message:
+        if _message is None:
+            await message.add_reaction(bot.get_emoji(config.emoji_warn))
+            continue
+        content = await data.get_states(_message.content)
+        inv_object = await data.strstate_to_objstate(content)
+        if '' in inv_object:
+            del inv_object['']
+        for _state in args['state'].split(","):
+            inv_object[_state] = _state
+        inv_string = await data.objstate_to_strstate(inv_object)
+        new_inv = await data.put_states(_message.content, inv_string)
+        await data.edit_inventory(_message, new_inv[1:-1])
 
 
 async def remove_state(bot, message, args):
-    inv = await data.get_inv(message.guild, args['id'])
-    if inv is None:
+    inv_message = await data.get_validate_messages(message.guild, args['id'])
+    if inv_message is None or len(inv_message) == 0:
         await message.add_reaction(bot.get_emoji(config.emoji_warn))
         return
-    message2 = await data.get_message(message.guild, args['id'])
-    content = await data.get_states(inv)
-    inv_object = await data.strstate_to_objstate(content)
-    if args['state'] not in inv_object:
-        await message.add_reaction(bot.get_emoji(config.emoji_warn))
-        return
-    del inv_object[args['state']]
-    inv_string = await data.objstate_to_strstate(inv_object)
-    new_inv = await data.put_states(inv, inv_string)
-    await data.edit_inventory(message2, new_inv[1:-1])
+    for _message in inv_message:
+        if _message is None:
+            await message.add_reaction(bot.get_emoji(config.emoji_warn))
+            continue
+        content = await data.get_states(_message.content)
+        inv_object = await data.strstate_to_objstate(content)
+        for _state in args['state'].split(","):
+            if _state not in inv_object:
+                await message.add_reaction(bot.get_emoji(config.emoji_warn))
+                continue
+            del inv_object[_state]
+        inv_string = await data.objstate_to_strstate(inv_object)
+        new_inv = await data.put_states(_message.content, inv_string)
+        await data.edit_inventory(_message, new_inv[1:-1])
 
 
 async def get_states(bot, message, args):
-
-    inv = await data.get_inv(message.guild, args['id'])
-    if inv is None:
+    inv_message = await data.get_validate_messages(message.guild, args['id'])
+    if inv_message is None or len(inv_message) == 0:
         await message.add_reaction(bot.get_emoji(config.emoji_warn))
-    else:
-        states = await data.get_states(inv)
-        await message.channel.send(f"**{args['id'].upper()} — СОСТОЯНИЕ**```{states}```")
+        return
+    for _message in inv_message:
+        if _message is None:
+            await message.add_reaction(bot.get_emoji(config.emoji_warn))
+            continue
+        else:
+            states = await data.get_states(_message.content)
+            c_id = await data.get_id_from_inv(_message.content)
+            await message.channel.send(f"**{c_id[0].upper()} — СОСТОЯНИЕ**```{states}```")
 
 
 async def parseArgs(string):

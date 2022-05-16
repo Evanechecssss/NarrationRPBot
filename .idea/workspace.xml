@@ -13,13 +13,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd7dcc8-9ede-44c1-8d53-16f93d208f74" name="Default Changelist" comment="emoji" />
+    <list default="true" id="9dd7dcc8-9ede-44c1-8d53-16f93d208f74" name="Default Changelist" comment="1.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +50,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/conf" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -58,7 +59,7 @@
       <recent name="D:\minecraftMods\NarrationRPBot" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.narrationrp">
     <configuration name="narrationrp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NarrationRPBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,9 +82,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NarrationRPBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.narrationrp" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +128,17 @@
       <workItem from="1652196140869" duration="17468000" />
       <workItem from="1652264197416" duration="18267000" />
       <workItem from="1652351530778" duration="2331000" />
-      <workItem from="1652441193916" duration="19374000" />
+      <workItem from="1652441193916" duration="20305000" />
+      <workItem from="1652514848599" duration="61000" />
+      <workItem from="1652515190498" duration="784000" />
+      <workItem from="1652516003587" duration="4087000" />
+      <workItem from="1652530233334" duration="1797000" />
+      <workItem from="1652550986242" duration="382000" />
+      <workItem from="1652609596946" duration="14756000" />
+      <workItem from="1652643932714" duration="2792000" />
+      <workItem from="1652688165971" duration="4234000" />
+      <workItem from="1652695789598" duration="2833000" />
+      <workItem from="1652721882393" duration="2180000" />
     </task>
     <task id="LOCAL-00001" summary="Inventory Parser">
       <created>1652265330843</created>
@@ -141,7 +175,49 @@
       <option name="project" value="LOCAL" />
       <updated>1652465492245</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Init">
+      <created>1652617997740</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652617997740</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Init">
+      <created>1652618011457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652618011457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test before">
+      <created>1652620114927</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652620114927</updated>
+    </task>
+    <task id="LOCAL-00009" summary="before asyncio">
+      <created>1652624325005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652624325006</updated>
+    </task>
+    <task id="LOCAL-00010" summary="before big changes">
+      <created>1652690253928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652690253928</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1.2">
+      <created>1652723927724</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652723927724</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,91 +254,124 @@
     <MESSAGE value="States" />
     <MESSAGE value="Final" />
     <MESSAGE value="emoji" />
-    <option name="LAST_COMMIT_MESSAGE" value="emoji" />
+    <MESSAGE value="Init" />
+    <MESSAGE value="test before" />
+    <MESSAGE value="before asyncio" />
+    <MESSAGE value="before big changes" />
+    <MESSAGE value="1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1652467445414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652467445414" />
+    <state x="845" y="383" key="#Notifications" timestamp="1652525848021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652525848021" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1652197747130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652197747130" />
-    <state x="585" y="382" width="1280" height="594" key="#xdebugger.evaluate" timestamp="1652455706932">
+    <state x="132" y="446" width="1280" height="594" key="#xdebugger.evaluate" timestamp="1652721934813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="382" width="1280" height="594" key="#xdebugger.evaluate/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652455706932" />
+    <state x="132" y="446" width="1280" height="594" key="#xdebugger.evaluate/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652721934813" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1652190618743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652190618743" />
-    <state x="824" y="418" width="271" height="276" key="Github.ShareDialog" timestamp="1652202492657">
+    <state x="824" y="418" width="271" height="276" key="Github.ShareDialog" timestamp="1652617926777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="824" y="418" width="271" height="276" key="Github.ShareDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652202492657" />
+    <state x="824" y="418" width="271" height="276" key="Github.ShareDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652617926777" />
     <state x="796" y="225" key="Github.UntrackedFilesDialog" timestamp="1652202497959">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="796" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652202497959" />
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.0.bottom" timestamp="1652723061353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061353" />
+    <state width="1877" height="218" key="GridCell.Tab.0.center" timestamp="1652723061353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.0.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061353" />
+    <state width="1877" height="218" key="GridCell.Tab.0.left" timestamp="1652723061353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.0.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061353" />
+    <state width="1877" height="218" key="GridCell.Tab.0.right" timestamp="1652723061353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.1.bottom" timestamp="1652468429491">
+    <state width="1877" height="218" key="GridCell.Tab.0.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061353" />
+    <state width="1877" height="218" key="GridCell.Tab.1.bottom" timestamp="1652723061242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429491" />
-    <state width="1877" height="289" key="GridCell.Tab.1.center" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061242" />
+    <state width="1877" height="218" key="GridCell.Tab.1.center" timestamp="1652723061242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.1.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.1.left" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.1.center/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061242" />
+    <state width="1877" height="218" key="GridCell.Tab.1.left" timestamp="1652723061242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.1.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
-    <state width="1877" height="289" key="GridCell.Tab.1.right" timestamp="1652468429490">
+    <state width="1877" height="218" key="GridCell.Tab.1.left/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061242" />
+    <state width="1877" height="218" key="GridCell.Tab.1.right" timestamp="1652723061242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="289" key="GridCell.Tab.1.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468429490" />
+    <state width="1877" height="218" key="GridCell.Tab.1.right/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652723061242" />
     <state x="841" y="240" key="RollbackChangesDialog" timestamp="1652203995975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="841" y="240" key="RollbackChangesDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652203995975" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1652468399179">
+    <state x="687" y="35" key="SettingsEditor" timestamp="1652724066051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652468399179" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1652465494719">
+    <state x="687" y="35" key="SettingsEditor/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652724066051" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1652618003731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652465494719" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652618003731" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1652190666696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652190666696" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1652453647762">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1652551371506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652453647762" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652551371506" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1652696672921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652696672921" />
+    <state x="-413" y="496" width="1736" height="845" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1652692356011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-413" y="496" width="1736" height="845" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652692356011" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1652265350004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652265350004" />
+    <state x="667" y="229" width="585" height="582" key="find.popup" timestamp="1652612622077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="229" width="585" height="582" key="find.popup/0.0.1920.1040/-1280.0.1280.984@0.0.1920.1040" timestamp="1652612622077" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NarrationRPBot$narrationrp.coverage" NAME="narrationrp Coverage Results" MODIFIED="1652464543976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NarrationRPBot$test.coverage" NAME="test Coverage Results" MODIFIED="1652526145683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NarrationRPBot$narrationrp.coverage" NAME="narrationrp Coverage Results" MODIFIED="1652723061200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

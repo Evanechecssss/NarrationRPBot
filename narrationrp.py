@@ -30,3 +30,4 @@ if __name__ == "__main__":
                          activity=discord.Streaming(name='музыку~ ❤', platform="YouTube", url=config.steaming_url,
                                                     twitch_name="some name"), status=discord.Status.online)
     client.run(config.token)
+    #client.run(config.dev_token)
