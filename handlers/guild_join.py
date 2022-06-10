@@ -10,3 +10,9 @@ async def on_join(bot, guild):
                 return
         channel = channels[0]
         await channel.send(await config.welcome_message(bot, guild.name))
+
+
+async def on_dm(bot, message):
+    channel = message.channel
+    author = message.author
+    await channel.send(f"{author.name.mention}, зачем ты мне пишешь? Нас ниче не связывает.")

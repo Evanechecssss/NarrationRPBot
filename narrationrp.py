@@ -16,7 +16,12 @@ class NarrationRP(discord.Client):
         await guild_join.on_join(self, guild)
 
     async def on_message(self, message):
-        if message.author.bot or not self.get_guild(message.guild.id).me.guild_permissions.administrator:
+        if message.author.bot:
+            return
+        if message.channel.id == message.author.dm_channel.id:
+            await guild_join.on_dm(self, message)
+            return
+        if not self.get_guild(message.guild.id).me.guild_permissions.administrator:
             return
         first_w = message.content.split(" ", 1)[0]
         if first_w in config.cmd_inv:
