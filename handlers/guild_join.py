@@ -15,4 +15,4 @@ async def on_join(bot, guild):
 async def on_dm(bot, message):
     channel = message.channel
     author = message.author
-    await channel.send(f"{author.name.mention}, зачем ты мне пишешь? Нас ниче не связывает.")
+    await channel.send(f"{author.mention}, зачем ты мне пишешь? Нас ниче не связывает.")
