@@ -18,7 +18,7 @@ class NarrationRP(discord.Client):
     async def on_message(self, message):
         if message.author.bot:
             return
-        if message.channel.id == message.author.dm_channel.id:
+        if message.channel == message.author.dm_channel:
             await guild_join.on_dm(self, message)
             return
         if not self.get_guild(message.guild.id).me.guild_permissions.administrator:
