@@ -32,6 +32,6 @@ class NarrationRP(discord.Client):
 
 if __name__ == "__main__":
     client = NarrationRP(intents=discord.Intents.all(),
-                         activity=discord.Streaming(name='музыку ❤', platform="YouTube", url=config.steaming_url,
+                         activity=discord.Streaming(name='so long nerds', platform="YouTube", url=config.steaming_url,
                                                     twitch_name="some name"), status=discord.Status.online)
     client.run(config.token)

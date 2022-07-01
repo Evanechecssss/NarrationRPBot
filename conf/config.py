@@ -1,5 +1,5 @@
 token = 'OTczMjE5Njg5MTM0MTk0NzY4.Ynkbdw.oZ-IYCYChkRmKT3S7hWGEVdr9W0'
-steaming_url = "https://www.youtube.com/watch?v=j-jUOwAIj5o"
+steaming_url = "https://www.youtube.com/watch?v=DPMluEVUqS0"
 sign_plus = "+"
 sign_minus = "-"
 sign_clear = "--"
